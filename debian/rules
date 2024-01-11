@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
 
+# Ensure packages build with no Internet access
+export http_proxy=127.0.0.1:9
+export https_proxy=127.0.0.1:9
+
 %:
 	dh $@
+
+override_dh_link:
+	jdupes -rl debian/liberror-prone-java/usr
+	dh_link
