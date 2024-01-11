@@ -1,0 +1,26 @@
+Description: Only build required modules
+ Currently, most Debian packages only use the annotations from this package.
+ Eliminating modules not needed for that purpose vastly simplifies the
+ dependencies. It should be simple to reenable additional modules if that
+ is necessary in the future.
+Author: Olek Wojnar <olek@debian.org>
+Last-Update: 2020-06-12
+
+--- a/pom.xml
++++ b/pom.xml
+@@ -60,15 +60,9 @@
+   </developers>
+ 
+   <modules>
+-    <module>check_api</module>
+-    <module>test_helpers</module>
+-    <module>core</module>
+     <module>annotation</module>
+     <module>annotations</module>
+     <module>type_annotations</module>
+-    <module>docgen</module>
+-    <module>docgen_processor</module>
+-    <module>refaster</module>
+   </modules>
+ 
+   <scm>

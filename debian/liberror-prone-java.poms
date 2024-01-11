@@ -1,0 +1,4 @@
+pom.xml --no-parent --java-lib
+annotation/pom.xml --java-lib --usj-name=error-prone-annotation
+annotations/pom.xml --java-lib --usj-name=error-prone-annotations
+type_annotations/pom.xml --java-lib --usj-name=error-prone-type-annotations

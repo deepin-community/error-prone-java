@@ -1,5 +1,40 @@
-template-repository (1.0-1) unstable; urgency=medium
+error-prone-java (2.18.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream release
+  * Link error_prone_annotations.jar to error-prone-annotations.jar
+    in /usr/share/java to fix a Gradle runtime error
+  * Removed the dependency on libmaven-enforcer-plugin-java
+  * Turn off verbose build
+  * Standards-Version updated to 4.6.2
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Emmanuel Bourg <ebourg@apache.org>  Sat, 21 Jan 2023 11:52:45 +0100
+
+error-prone-java (2.16-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * Updated the watch file
+  * Standards-Version updated to 4.6.1
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 13 Dec 2022 09:07:24 +0100
+
+error-prone-java (2.14.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 2.14.0
+
+ -- tony mancill <tmancill@debian.org>  Sat, 04 Jun 2022 08:40:40 -0700
+
+error-prone-java (2.4.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove modifications to upstream source since JAR files no longer shipped
+
+ -- Olek Wojnar <olek@debian.org>  Mon, 29 Jun 2020 00:55:11 -0400
+
+error-prone-java (2.3.2+ds-1) unstable; urgency=medium
+
+  * Initial release (Closes: #959835, #958537)
+
+ -- Olek Wojnar <olek@debian.org>  Fri, 12 Jun 2020 12:06:02 -0400
